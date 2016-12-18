@@ -1,5 +1,5 @@
-
 import React, { Component } from 'react'
+import { connect } from 'react-redux'
 
 import { setUser } from '../store/modules/user'
 import Api from '../api'
@@ -24,10 +24,10 @@ class Login extends Component {
         return(
             <div>
                 <h1>This is Login Page.</h1>
-                <button onClick={this.login}>Dispatch Login</button>
+                <button onClick={this.login.bind(this)}>Dispatch Login</button>
             </div>
         )
     }
 }
 
-export default Login
+export default connect(state => state) (Login)
