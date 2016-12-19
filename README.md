@@ -2,11 +2,11 @@
 
 This is a React + Redux best practice workflow, It's base on [Create React App](https://github.com/facebookincubator/create-react-app)
 
-# usage
+# Usage
 > git clone git@github.com:wewoor/react-redux-workflow.git your-project-name
 
 ```
-  npm start
+  npm insatll
     automatic install dependencies
 
   yarn start
